@@ -4,5 +4,12 @@ function overflow(){
     bb=document.getElementById("PASS").value;
     if (bb=="qwerty799"){
     document.getElementById("vid").style.opacity=100;
-    } 
+    document.getElementById("TT").innerText="Доступ к документам разрешен";
+    document.getElementById("TT").style.color="green";
+    } else if (bb==""){
+        document.getElementById("TT").innerText="";
+    }
+    else{
+        document.getElementById("TT").innerText="НЕВЕРНО ВВЕЛ ДИДЖИК";
+    }
 }
